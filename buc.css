@@ -1,35 +1,37 @@
 body {
-	margin: auto;
+	margin:180px;
     background-image:url("https://img.freepik.com/free-vector/white-abstract-background_23-2148817571.jpg");
     width:200px;
     height:500px;
 	text-align: center;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
+	
  }
 .container{
 	position: absolute;
-	top: 50%;
+	top: 70%;
 	left: 50%;
 	transform: translate(-50%,-50%);
-	margin: auto;
-    width: 350px;
-	margin-top: 25px;
+	margin: 30px;
+    width: 700px;
+	text-align: centre;
 	border: 7px solid gray;
-	padding: 52px;
+	padding: 100px;
 	border-radius: 15px;
 	background-color: beige;
 }
 form{
 	background-color: white;
 }
-div {
+.div {
 	width: 320px;
 	padding: 10px;
 	text-align: center;
-	margin: 0;
-  }
+
+    border: 2px solid grey;
+}
 a {
   text-decoration: none;
   display: inline-block;
@@ -64,4 +66,7 @@ button{
 	width: 100px;
 	height: 40px;
 	margin: 10px;
+}
+h1{
+margin-top: auto;
 }

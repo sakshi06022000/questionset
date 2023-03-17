@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" contents="IE-edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel ="stylesheet" href="occ.css">
+   <title>Document</title>
+</head>
+<body><!--br><br>
+    <div class= "container">
+        <h1>Question Set</h1>
+        <form onsubmit="event.preventDefault()">
+        <div class="question set">
+            <h3>Q.2 Write a Program to find number of occurance of each character in a given String ?</h3>
+
+                <p><h4>Enter a string:<input type="text & number"  class ="form-control register_form"  id="text & number" placeholder="Enter a text & number"></h4></p>
+                <button onclick="countOccurrences()">Count</button><br>
+
+                <a href="Q.html" class="previous"> &raquo; Previous</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp;
+                <a href="arr.html" class="next">Next &raquo;</a><br><br>
+                <p id="result"></p>
+        </div>
+    </form>
+    </div>
+    <script>
+        var allFields =document.querySelectorAll(".register_form");
+        //get all input fields
+        
+        for(var i=0; i<allFields.length;i++){
+            //access one by one input fields
+            
+            allFields[i].addEventListener("keyup",function (event){
+                
+                debugger;
+                if (event.code === 'Enter'){
+                    console.log(event.key);
+                    console.log("Enter clicked");
+                    event.preventDefault();
+                    if (this.parentElement.nextElementSiblings.querySelectorAll("input")){
+                        (this.parentElement.nextElementSiblings.querySelectorAll("input").focus());
+                    }
+                }
+            });
+            function countOccurrences(){
+            var input = document.getElementById("text & number").value;
+    
+    // Initialize an object to store the count of each character
+    var count = {};
+    
+    // Iterate through each character in the string
+    for (var i = 0; i < input.length; i++) {
+      var char = input[i];
+      if (count[char]) {
+        count[char]++;
+      } else {
+        count[char] = 1;
+      }
+    }
+    
+    // Convert the count object to an array of strings
+    var result = [];
+    for (var char in count) {
+      result.push(char + ": " + count[char]);
+    }
+    
+    // Display the result
+    document.getElementById("result").innerHTML = result.join("<br>");
+        }
+    }
+
+    </script>
+
+</body-->
+</html>
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+</script>
+<h1 style="color:green;">
+    GeeksforGeeks
+</h1>
+  
+Username:<input id="uname" 
+                type="text">
+<br>
+Password:<input id="pass" 
+                type="password">
+<br>
+<button id="GFG_Button">Submit</button>
+<p id="gfg"></p>
+<script>
+   $("#uname").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#pass").click();
+        }
+    });
+    $("#pass").keyup(function(event) {
+        if (event.keyCode === 13) {
+            $("#GFG_Button").click();
+        }
+    });
+      
+    $("#pass").click(function() {
+        document.getElementById("pass").innerHTML = "Button clicked"
+    });
+    $("#GFG_Button").click(function() {
+        document.getElementById("gfg").innerHTML = "Button clicked"
+    });
+</script>
