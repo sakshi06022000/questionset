@@ -1,0 +1,67 @@
+body {
+	margin: auto;
+    background-image:url("https://img.freepik.com/free-vector/white-abstract-background_23-2148817571.jpg");
+    width:200px;
+    height:500px;
+	text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ }
+.container{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	margin: auto;
+    width: 350px;
+	margin-top: 25px;
+	border: 7px solid gray;
+	padding: 52px;
+	border-radius: 15px;
+	background-color: beige;
+}
+form{
+	background-color: white;
+}
+div {
+	width: 320px;
+	padding: 10px;
+	text-align: center;
+	margin: 0;
+  }
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.previous {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+.next {
+  background-color: #04AA6D;
+  color: white;
+}
+input{
+	border-radius: 5px;
+	border: 2px solid green;
+	font-size: 15px;
+	/*width: 95px;*/
+}
+button{
+	border-radius: 15px;
+	border:2px solid black;
+	font-size : 15px;
+	background: chartreuse;
+	width: 100px;
+	height: 40px;
+	margin: 10px;
+}
